@@ -30,12 +30,8 @@ class Employee:
 
 obj1 = Employee("kanay",60000)
 print(obj1)
+print(repr(obj1))
+print(str(obj1))
 obj2 = Employee("kush",80000)
 
-
-
-a = 5
-print(7+6)
-print(a.__add__(6))
-print(9+7)
 print(obj1 + obj2)
