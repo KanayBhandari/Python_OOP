@@ -20,6 +20,10 @@ class Employee:
 		name, salary = emp_str.split('-')
 		return cls(name, salary)
 
+	@staticmethod
+	def about():
+		return "this is a Employee class"
+
 obj = Employee("kanay",60000)
 print(obj.salary)
 
@@ -43,3 +47,7 @@ obj3 = Employee.from_str("subham-90000")
 
 print(obj3.name)
 print(obj3.salary)
+
+#############################################################################################
+# static method
+print(Employee.about())
