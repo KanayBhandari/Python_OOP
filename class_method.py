@@ -15,6 +15,11 @@ class Employee:
 	def change_increment(cls,increment):
 		cls.increment = increment
 
+	@classmethod
+	def from_str(cls, emp_str):
+		name, salary = emp_str.split('-')
+		return cls(name, salary)
+
 obj = Employee("kanay",60000)
 print(obj.salary)
 
@@ -29,3 +34,12 @@ print(Employee.no_of_employees)
 
 obj2 = Employee("kush",70000)
 print(Employee.no_of_employees)
+
+#############################################################################################
+# class method as alternative constructor
+
+
+obj3 = Employee.from_str("subham-90000")
+
+print(obj3.name)
+print(obj3.salary)
